@@ -62,14 +62,13 @@ SQLObject provides similar core ActiveRecord methods:
     - Used by #save, updates item if it exists
 
 ### Insert/Update
-![Alt text](./images/Insert:Update.png?raw=true)
-<!-- [![welcome](./docs/images/Insert:Update.png)] -->
+![insert:update](./images/Insert:Update.png?raw=true)
 
 ### Has Many Options (default values)
-[![welcome](./images/has_many_options.png)]
+![has_many_options](./images/has_many_options.png?raw=true)
 
 ### Has One Through
-[![welcome](./images/has_one_through.png)]
+![has_one_through](./images/has_one_through.png?raw=true)
 
 
 ## How It Works

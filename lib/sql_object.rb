@@ -4,6 +4,9 @@ require_relative 'associatable'
 require 'active_support/inflector'
 
 class SQLObject
+  extend Searchable
+  extend Associatable
+
   def self.columns
     return @columns if @columns
 

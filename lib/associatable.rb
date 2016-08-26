@@ -1,4 +1,4 @@
-require_relative '02_searchable'
+require_relative 'searchable'
 require 'active_support/inflector'
 
 class AssocOptions
@@ -111,8 +111,4 @@ module Associatable
       source_options.model_class.parse_all(results).first
     end
   end
-end
-
-class SQLObject
-  extend Associatable
 end

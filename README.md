@@ -11,9 +11,11 @@ readability and DRYness of your code.
 ##Demo
 
 1. Clone the repo
-2. Load `irb` or `pry` in terminal
-3. Run `load './demo.rb'`
-4. Go wild (using demo.rb as a reference)
+2. cd Datafy
+3. cat dragons.sql | sqlite3 dragons.db
+3. Load `irb` or `pry` in terminal
+4. Run `load './demo.rb'`
+
 
 ## Libraries
 
@@ -41,8 +43,33 @@ SQLObject provides similar core ActiveRecord associations:
 SQLObject provides similar core ActiveRecord methods:
 
 - `::find`
+    - Finds item with given id
 - `::where`
+    - Finds all items with given criteria
+- `::all`
+    - Finds all items
+- `::parse_all`
+    - Take in an array and turns all items into table objects
+- `::finalize!`
+    - Defines #col and #col= methods on table
+- `::columns`
+    - Prints out a list of columns from given table
 - `#save`
+    - Saves changes that are made to table item
+- `#insert`
+    - Used by #save, inserts new item into end of table
+- `#update`
+    - Used by #save, updates item if it exists
+
+### Insert/Update
+[![welcome](./docs/images/Insert:Update.png)]
+
+### Has Many Options (default values)
+[![welcome](./docs/images/has_many_options.png)]
+
+### Has One Through
+[![welcome](./docs/images/has_one_through.png)]
+
 
 ## How It Works
 

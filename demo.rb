@@ -1,4 +1,6 @@
 require_relative 'lib/sql_object'
+# require 'dragons.db'
+# require 'dragons.sql'
 
 DEMO_DB_FILE = 'dragons.db'
 DEMO_SQL_FILE = 'dragons.sql'

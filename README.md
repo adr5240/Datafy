@@ -22,9 +22,10 @@ class.
 
 1. Clone the repo
 2. cd Datafy
-3. cat dragons.sql | sqlite3 dragons.db
-3. Load `irb` or `pry` in terminal
+3. sqlite3 dragons.db < dragons.sql
+3. Open a new terminal window, then load `irb` or `pry`
 4. Run `load './demo.rb'`
+5. Use API below
 
 ## API
 
@@ -36,10 +37,18 @@ SQLObject provides similar core ActiveRecord associations:
 
 SQLObject provides similar core ActiveRecord methods:
 
+- `::first`
+- Finds first table item
+    - Targaryen.first == "Aegon Targaryen" (only name shown here)
+- `::last`
+- Finds last table item
+    - Dragon.last == "Stray Dragon" (only name shown here)
 - `::find`
 - Finds item with given id
+    - Dragon.find(3).name == "Balerion"
 - `::where`
 - Finds all items with given criteria
+    - Targaryen.where(lname: "Targaryen") == list of three Targaryens
 - `::all`
 - Finds all items
 - `::parse_all`

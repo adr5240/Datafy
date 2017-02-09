@@ -21,11 +21,12 @@ class.
 ##Demo
 
 1. Clone the repo
-2. cd Datafy
+2. cd into Datafy (or Datafy-master if saved as such)
 3. sqlite3 dragons.db < dragons.sql
-3. Open a new terminal window, then load `irb` or `pry`
-4. Run `load './demo.rb'`
-5. Use API below
+4. sqlite3 dragons.db
+5. Open a new terminal window, then load `irb` or `pry`
+6. Run `load 'demo.rb'`
+7. Use API below
 
 ## API
 

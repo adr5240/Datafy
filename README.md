@@ -22,8 +22,8 @@ class.
 
 1. Clone the repo
 2. cd into Datafy (or Datafy-master if saved as such)
-3. sqlite3 dragons.db < dragons.sql
-4. sqlite3 dragons.db
+3. `sqlite3 dragons.db < dragons.sql`
+4. `sqlite3 dragons.db`
 5. Open a new terminal window, then load `irb` or `pry`
 6. Run `load 'demo.rb'`
 7. Use API below
